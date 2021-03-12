@@ -35,12 +35,12 @@
 button {
   display: inline-block;
   text-decoration: none;
-  height: 48px;
+  height: 64px;
   padding: 0 16px;
   text-align: center;
   vertical-align: middle;
   font-size: 18px;
-  width: 300px;
+  width: 325px;
   font-weight: 600;
   line-height: 48px;
   letter-spacing: 0.5px;
@@ -61,6 +61,18 @@ button:hover,
 .button.button-primary:focus {
   color: #FFF;
   filter: brightness(90%) }
+
+.button p {
+  font-size:12px;
+  margin:-26px;
+  font-weight:normal;
+  color: inherit;
+}
+
+.button a {
+  color: inherit;
+  text-decoration: inherit;
+}
 
 
 /* Brand Icons

@@ -32,22 +32,30 @@
   
   <!-- Internationalization (booo)
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   <script type="text/javascript">
-    function changeAllInClass(divsToHide, operator) {
-      for(var i = 0; i < divsToHide.length; i++){
-        divsToHide[i].style.display = operator;
+    $(document).ready(function(){  
+      var userLang = navigator.language || navigator.userLanguage; 
+      var simpleLang = userLang.substring(0, 2);
+      if (simpleLang == "es") {
+        $(".english").hide();
+        $(".spanish").show();
+      } else {
+        $(".english").show();
+        $(".spanish").hide();
       }
-    }
-    var userLang = navigator.language || navigator.userLanguage; 
-    var simpleLang = userLang.substring(0, 2);
-    var en = document.getElementsByClassName("english");
-    var es = document.getElementsByClassName("spanish");
-    if (simpleLang == "es") {
-      changeAllInClass(en, "none");
-      changeAllInClass(es, "block");
-    } else {
-      changeAllInClass(en, "block");
-      changeAllInClass(es, "none");
+      $(".container").css("opacity", "1");
+    });
+
+    function changeLanguages(codeToChange) {
+      if (codeToChange == "en") {
+        $(".english").show();
+        $(".spanish").hide();
+      } else {
+        $(".english").hide();
+        $(".spanish").show();
+      }
     }
   </script>
 
@@ -70,33 +78,55 @@
         <!-- Replace # with your profile URL. Delete whatever you don't need & create your own brand styles in css/brands.css -->  
 
         <!-- Newgrounds -->
-        <a class="button button-newgrounds" href="https://despedite.newgrounds.com"><img class="icon" src="icons/newgrounds.svg">Newgrounds</a>
-          <br>
+        <div class="english">
+          <div class="button button-newgrounds">
+            <a href="https://despedite.newgrounds.com"><img class="icon" src="icons/newgrounds.svg">Newgrounds</a>
+            <p>Select games and my personal art dump.</p>
+              <br>
+          </div>
 
-        <!-- Itch.io --> 
-        <a class="button button-itchio" href="https://despedite.itch.io"><img class="icon" src="icons/itchio.svg">Itch.io</a>
-          <br>
+          <!-- Itch.io --> 
+          <div class="button button-itchio">
+            <a href="https://despedite.itch.io"><img class="icon" src="icons/itchio.svg">Itch.io</a>
+            <p>Play all my indie games here!</p>
+              <br>
+          </div>
 
-        <!-- Twitter -->
-        <a class="button button-twitter" href="https://twitter.com/heydespedite"><img class="icon" src="icons/twitter.svg">Twitter</a>
-          <br>
-        
-        <!-- Github -->
-        <a class="button button-github" href="https://github.com/despedite"><img class="icon" src="icons/github.svg">Github</a>
-          <br>
+          <!-- Twitter -->
+          <div class="button button-twitter">
+            <a href="https://twitter.com/heydespedite"><img class="icon" src="icons/twitter.svg">Twitter</a>
+            <p>Drawings and ramblings, 280 chars at a time.</p>
+              <br>
+          </div>
+          
+          <!-- Github -->
+          <div class="button button-github">
+            <a href="https://github.com/despedite"><img class="icon" src="icons/github.svg">Github</a>
+            <p>Code and personal projects!</p>
+            <br>
+          </div>
+        </div>
 
-        <!-- Instagram 
-        <a class="button button-instagram" href="#"><img class="icon" src="icons/instagram.svg">Instagram</a>
-          <br>
-        -->
+        <div class="spanish">
+          <!-- Instagram -->
+          <div class="button button-instagram">
+            <a href="https://www.instagram.com/despedite"><img class="icon" src="icons/instagram.svg">Instagram</a>
+            <p>Arte y otras cosas personales.</p>
+          </div>
+            <br>
 
-        <!-- YouTube 
-        <a class="button button-youtube" href="#"><img class="icon" src="icons/youtube.svg">YouTube</a>
-          <br> 
-        -->
+          <!-- YouTube -->
+          <div class="button button-youtube">
+            <a href="https://www.youtube.com/Despedite"><img class="icon" src="icons/youtube.svg">YouTube</a>
+              <p>Cuando haces tus proyectos en video.</p>
+              <br> 
+          </div>
+        </div>
 
         <br>
         <br>
+        <p class="english">There's more stuff, if you happen to <a href="#" onclick="changeLanguages('es')">know Spanish</a>.</p>
+        <p class="spanish">Hay todavía más, si <a href="#" onclick="changeLanguages('en')">sabés Inglés</a>.</p>
           
       </div>
     </div>
