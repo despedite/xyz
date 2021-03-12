@@ -29,6 +29,17 @@
 
 </head>
 <body>
+  
+  <!-- Internationalization (booo)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript">
+    var userLang = navigator.language || navigator.userLanguage; 
+    var simpleLang = userLang.substring(0, 2);
+    if (simpleLang == "es") {
+      document.getElementById("english").style.display = "none";
+      document.getElementById("spanish").style.display = "none";
+    }
+  </script>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -42,7 +53,8 @@
         <h1>Despedite</h1>
 
         <!-- Short Bio -->
-        <p>Programmer, drawer-guy and self-proclaimed game dev from the dark crevices of Buenos Aires, Argentina. Check out my <i>Content</i> below - or shoot me a follow, even!</p>
+        <p class="english">Programmer, drawer-guy and self-proclaimed game dev from the dark crevices of Buenos Aires, Argentina. Check out my "content" below - or shoot me a follow, even!</p>
+        <p class="spanish">Programador, pibe-dibujo y creador de juegos auto-proclamado de las oscuras grietas de Buenos Aires, Argentina. Mirá mi "contenido" abajo - ¡o hasta seguime en alguna parte!</p>
         
 
         <!-- Replace # with your profile URL. Delete whatever you don't need & create your own brand styles in css/brands.css -->  
