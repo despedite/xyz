@@ -36,11 +36,11 @@
     var userLang = navigator.language || navigator.userLanguage; 
     var simpleLang = userLang.substring(0, 2);
     if (simpleLang == "es") {
-      document.getElementByClass("english").style.display = "none";
-      document.getElementByClass("spanish").style.display = "block";
+      document.getElementByClassName("english").style.display = "none";
+      document.getElementByClassName("spanish").style.display = "block";
     } else {
-      document.getElementByClass("english").style.display = "block";
-      document.getElementByClass("spanish").style.display = "none";
+      document.getElementByClassName("english").style.display = "block";
+      document.getElementByClassName("spanish").style.display = "none";
     }
   </script>
 
