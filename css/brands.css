@@ -85,6 +85,22 @@ button:hover,
 .button.button-discord:focus {
   filter: brightness(90%) }
 
+/* Itch.io */
+.button.button-itchio {
+  color: #FFFFFF;
+  background-color: #FF5C5B }
+.button.button-itchio:hover,
+.button.button-itchio:focus {
+  filter: brightness(90%) }
+
+/* Newgrounds */
+.button.button-newgrounds {
+  color: #000000;
+  background-color: #FFB50E }
+.button.button-newgrounds:hover,
+.button.button-newgrounds:focus {
+  filter: brightness(90%) }
+
 /* Facebook */
 .button.button-facebook {
   color: #FFFFFF;
