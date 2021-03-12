@@ -33,14 +33,21 @@
   <!-- Internationalization (booo)
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript">
+    function changeAllInClass(divsToHide, operator) {
+      for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = operator;
+      }
+    }
     var userLang = navigator.language || navigator.userLanguage; 
     var simpleLang = userLang.substring(0, 2);
+    var en = document.getElementsByClassName("english");
+    var es = document.getElementsByClassName("spanish");
     if (simpleLang == "es") {
-      document.getElementsByClassName("english").style.display = "none";
-      document.getElementsByClassName("spanish").style.display = "block";
+      changeAllInClass(en, "none");
+      changeAllInClass(es, "block");
     } else {
-      document.getElementsByClassName("english").style.display = "block";
-      document.getElementsByClassName("spanish").style.display = "none";
+      changeAllInClass(en, "block");
+      changeAllInClass(es, "none");
     }
   </script>
 
