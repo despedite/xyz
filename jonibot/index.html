@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Jonibot</title>
+		<link rel="icon" href="images/jonibot.jpg" type="image/jpg">
+
+		<!-- BS 5 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		<!-- FA 6 -->
+		<script src="https://kit.fontawesome.com/958c7ba50e.js" crossorigin="anonymous"></script>
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+
+		<!-- Dark Mode switch -->
+		<label class="switch">
+			<input type="checkbox" onclick="toggleDarkMode()">
+			<span class="slider round"></span>
+		</label>
+		
+		<div class="body-margin">
+
+			<div class="joni fade-in">
+				<span id="emoji" class="display-3">☕</span><br>
+				<p class="pt-3">
+					<span id="fecha"></span><br>
+				</p>
+				
+				<span class="badge bg-secondary mb-3" id="disponibilidad"></span><br>
+
+				<span id="saludo"></span><br>
+				<i><span id="tipo"></span></i><br>
+				<p class="pt-3">
+					<span id="dato"></span><br><br>
+				</p>
+
+				<div class="quote">
+					<blockquote class="blockquote">
+						<i><p class="mb-3" id="cita"></p></i>
+						<footer class="blockquote-footer" id="cita-autor"></cite></footer>
+					</blockquote>
+				</div>
+			</div>
+
+			<div class="dashboard">
+				<button type="button" class="btn btn-dark" onclick="elementoAlAzar()" data-toggle="tooltip" data-placement="top" title="Jonidato al azar">
+					<i class="fas fa-sync-alt"></i>
+				</button>
+				<button type="button" class="btn btn-dark" onclick="elementoAlAzar('Efemérides')" data-toggle="tooltip" data-placement="top" title="Efeméride al azar">
+					<i class="fas fa-calendar"></i>
+				</button>
+				<button type="button" class="btn btn-dark" onclick="elementoAlAzar('Sabías que...')" data-toggle="tooltip" data-placement="top" title='"Sabías que..." al azar"'>
+					<i class="fas fa-question-circle"></i>
+				</button>
+			</div>
+
+		</div>
+
+		<!-- Script -->
+		<script src="index.js"> </script>
+
+		<!-- BS 5 -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	</body>
+</html>

@@ -1,0 +1,142 @@
+.dashboard {
+	position: fixed;
+	bottom: 5%;
+	right: 44%;
+	text-align: center;
+}
+
+.joni {
+	margin: 3em 4em 3em 4em;
+	text-align: center;
+}
+
+.blockquote p {
+	font-size: 15px;
+	color: #313131;
+}
+
+.blockquote footer {
+	font-size: 12px;
+}
+
+/* Dark Mode */
+
+.dark-mode {
+	background-color: #313131;
+	color: #fff;
+}
+
+.dark-mode button {
+	background-color: #eeeeee;
+	color: #000000;
+}
+
+.dark-mode button:hover {
+	background-color: #dfdfdf;
+	color: #000000;
+}
+
+.dark-mode button:focus {
+	background-color: #eeeeee;
+	color: #000000;
+}
+
+.dark-mode #fecha {
+	color: #dddddd;
+}
+
+.dark-mode .blockquote p {
+	color: #b8b8b8;
+}
+
+#fecha {
+	font-size: 12px;
+	color: #3f3f3f;
+}
+
+#saludo {
+	font-size: 18px;
+}
+
+/* Animacion */
+
+.fade-in {
+	animation: fadeIn 1.5s;
+  	opacity: 1;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Dark Mode toggle */
+
+ /* The switch - the box around the slider */
+ .switch {
+	position: fixed;
+	display: inline-block;
+	top: 3%;
+	left: 95%;
+	width: 35px;
+	height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #dadada;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 13px;
+	width: 13px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #242424;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 0px #242424;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(14px);
+	-ms-transform: translateX(14px);
+	transform: translateX(14px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 34px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  } 
