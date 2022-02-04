@@ -730,6 +730,12 @@ var joni = [
 		"tipo": "Sabías que...",
 		"fecha": "2022-2-3"
 	},
+	{
+		"saludo": "Llego el [dia] Trinomero 😃 !!!",
+		"dato": "Sabias que... Los ojos hacen más ejercicio que las piernas?",
+		"tipo": "Sabías que...",
+		"fecha": "2022-2-4"
+	}
 ]
 
 // ---💻---
