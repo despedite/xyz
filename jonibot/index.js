@@ -735,6 +735,13 @@ var joni = [
 		"dato": "Sabias que... Los ojos hacen más ejercicio que las piernas?",
 		"tipo": "Sabías que...",
 		"fecha": "2022-2-4"
+	},
+	{
+		"saludo": "Buenos dias Trinomers!!! Que tengan una excelente semana!!!",
+		"emoji": "👋",
+		"dato": "Sabias que... El polvo que vemos frente al resplandor que entra por la ventana, así como el que se acumula en el suelo o sobre los muebles, está compuesto en un 90% por células muertas de nuestro cuerpo?",
+		"tipo": "Sabías que...",
+		"fecha": "2022-2-7"
 	}
 ]
 
