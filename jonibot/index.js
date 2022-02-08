@@ -739,9 +739,17 @@ var joni = [
 	{
 		"saludo": "Buenos dias Trinomers!!! Que tengan una excelente semana!!!",
 		"emoji": "👋",
-		"dato": "Sabias que... El polvo que vemos frente al resplandor que entra por la ventana, así como el que se acumula en el suelo o sobre los muebles, está compuesto en un 90% por células muertas de nuestro cuerpo?",
+		"dato": "El polvo que vemos frente al resplandor que entra por la ventana, así como el que se acumula en el suelo o sobre los muebles, está compuesto en un 90% por células muertas de nuestro cuerpo?",
 		"tipo": "Sabías que...",
 		"fecha": "2022-2-7"
+	},
+	{
+		"saludo": "Muy buenos días Trinomibros!!!!",
+		"dato": "Cuando miras al cielo y ves puntos blancos como bacterias, en realidad estás viendo tus propias células blancas llamadas Miodesopsias?",
+		"tipo": "Sabías que...",
+		"cita": "sabes que desde chiquito me preguntaba que era eso",
+		"cita-autor": "Santi",
+		"fecha": "2022-2-8"
 	}
 ]
 
