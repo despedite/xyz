@@ -750,7 +750,14 @@ var joni = [
 		"cita": "sabes que desde chiquito me preguntaba que era eso",
 		"cita-autor": "Santi",
 		"fecha": "2022-2-8"
-	}
+	},
+	{
+		"saludo": "Trinomionsss que tengan un excelente dia!!!",
+		"emoji": "😛",
+		"dato": "Al igual que las huellas dactilares, la lengua de cada persona también es una marca de identidad?",
+		"tipo": "Sabías que...",
+		"fecha": "2022-2-9"
+	},
 ]
 
 // ---💻---
