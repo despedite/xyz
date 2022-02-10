@@ -758,6 +758,13 @@ var joni = [
 		"tipo": "Sabías que...",
 		"fecha": "2022-2-9"
 	},
+	{
+		"saludo": "Muy buenos dias Trinomions!!!!",
+		"emoji": "🍅",
+		"dato": "En el mundo hay más de 10 mil tipos de tomates?",
+		"tipo": "Sabías que...",
+		"fecha": "2022-2-10"
+	},
 ]
 
 // ---💻---
