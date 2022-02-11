@@ -765,6 +765,12 @@ var joni = [
 		"tipo": "Sabías que...",
 		"fecha": "2022-2-10"
 	},
+	{
+		"saludo": "Buenos días bros, llegó el [dia] Trinomeroooooo",
+		"dato": "Si a los 30 años un espartano seguía siendo soltero, perdida el derecho al sufragio y no podía asistir a los festejos?",
+		"tipo": "Sabías que...",
+		"fecha": "2022-2-11"
+	}
 ]
 
 // ---💻---
