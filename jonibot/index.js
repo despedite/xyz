@@ -774,6 +774,7 @@ var joni = [
 	{
 		"saludo": "Buenos dias Trinomers!!!!! Tengan ustedes un excelente [estado-semana]!!!",
 		"dato": "Una canilla que gotea desperdicia más de 75 litros de agua por día?",
+		"emoji": "😔",
 		"tipo": "Sabías que...",
 		"fecha": "2022-2-14"
 	}
