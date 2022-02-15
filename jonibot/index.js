@@ -777,6 +777,13 @@ var joni = [
 		"emoji": "😔",
 		"tipo": "Sabías que...",
 		"fecha": "2022-2-14"
+	},
+	{
+		"saludo": "Muy buenos dias Trinomibros!!!!!!",
+		"emoji": "🇺🇸",
+		"dato": "Aproximadamente el 77% de los torneos del mundo ocurren en los EEUU?",
+		"tipo": "Sabías que...",
+		"fecha": "2022-2-15"
 	}
 ]
 
